@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane prefHeight="523.0" prefWidth="818.0" style="-fx-background-color: #0000be;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sign.SignController">
+   <bottom>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="525.0" prefWidth="692.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="110.0" layoutY="304.0" mnemonicParsing="false" onAction="#goLogIn" prefHeight="37.0" prefWidth="185.0" text="Log In">
+               <font>
+                  <Font name="Gill Sans" size="19.0" />
+               </font></Button>
+            <AnchorPane layoutX="409.0" prefHeight="525.0" prefWidth="410.0" style="-fx-background-color: #436060;">
+               <children>
+                  <Label layoutX="151.0" layoutY="26.0" text="Sign Up" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="82.0" text="First Name" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="210.0" layoutY="317.0" text="Date of Birth" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="317.0" text="Type" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="232.0" text="Password" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="163.0" text="E-Mail Address" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="211.0" layoutY="82.0" text="Last Name" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="lastname" layoutX="214.0" layoutY="119.0" />
+                  <TextField fx:id="email" layoutX="28.0" layoutY="196.0" prefHeight="27.0" prefWidth="348.0" promptText="Example@iiitd.ac.in" />
+                  <PasswordField fx:id="password" layoutX="29.0" layoutY="265.0" prefHeight="27.0" prefWidth="346.0" promptText="Atleast 8 characters" />
+                  <DatePicker fx:id="date" layoutX="208.0" layoutY="356.0" prefHeight="25.0" prefWidth="161.0" />
+                  <ChoiceBox fx:id="type" layoutX="28.0" layoutY="356.0" prefWidth="150.0" />
+                  <CheckBox fx:id="robot" layoutX="26.0" layoutY="462.0" mnemonicParsing="false" text="I am not a Robot" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Button layoutX="183.0" layoutY="452.0" mnemonicParsing="false" onAction="#handleActionPerformed" prefHeight="25.0" prefWidth="196.0" style="-fx-background-color: #dde2e2;" text="Submit">
+                     <font>
+                        <Font name="Gill Sans" size="19.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="firstname" layoutX="29.0" layoutY="119.0" />
+                  <CheckBox fx:id="one" layoutX="151.0" layoutY="408.0" mnemonicParsing="false" onAction="#handleone" text="1" textFill="WHITE" />
+                  <CheckBox fx:id="two" layoutX="192.0" layoutY="408.0" mnemonicParsing="false" onAction="#handletwo" text="2" textFill="WHITE" />
+                  <CheckBox fx:id="three" layoutX="238.0" layoutY="408.0" mnemonicParsing="false" onAction="#handlethree" text="3" textFill="WHITE" />
+                  <CheckBox fx:id="four" layoutX="281.0" layoutY="408.0" mnemonicParsing="false" onAction="#handlefour" text="4" textFill="WHITE" />
+                  <Label layoutX="27.0" layoutY="408.0" text="Group (if Student)" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="73.0" layoutY="125.0" text="Already a member?" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="184.0" text="Log In now!" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

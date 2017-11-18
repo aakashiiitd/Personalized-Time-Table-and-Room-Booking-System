@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane prefHeight="750.0" prefWidth="787.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.faculty.FacultyController">
+   <center>
+      <AnchorPane onDragDetected="#clearFields" prefHeight="750.0" prefWidth="777.0" style="-fx-background-color: #660000FF;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="64.0" layoutY="93.0" text="Faculty" textFill="WHITE">
+               <font>
+                  <Font size="44.0" />
+               </font>
+            </Label>
+            <Button layoutX="132.0" layoutY="540.0" mnemonicParsing="false" onAction="#checkAvailability" prefHeight="35.0" prefWidth="245.0" text="Check Room Availability" />
+            <Button layoutX="466.0" layoutY="539.0" mnemonicParsing="false" onAction="#BookRoom" prefHeight="36.0" prefWidth="244.0" text="Book Room" />
+            <Button layoutX="467.0" layoutY="624.0" mnemonicParsing="false" onAction="#CancelRoom" prefHeight="35.0" prefWidth="243.0" text="Cancel booking" />
+            <Button layoutX="133.0" layoutY="624.0" mnemonicParsing="false" onAction="#ViewCourses" prefHeight="35.0" prefWidth="243.0" text="View My Courses" />
+            <Button layoutX="672.0" layoutY="23.0" mnemonicParsing="false" onAction="#goLogIn" style="-fx-background-radius: 50;" text="Log Out">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="room" layoutX="572.0" layoutY="186.0" />
+            <TextField fx:id="day" layoutX="573.0" layoutY="247.0" />
+            <TextField fx:id="time_from" layoutX="573.0" layoutY="303.0" />
+            <TextField fx:id="time_to" layoutX="573.0" layoutY="361.0" />
+            <Label layoutX="377.0" layoutY="182.0" text="Room Number" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="381.0" layoutY="243.0" text="Day" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="381.0" layoutY="308.0" text="Time: From" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="381.0" layoutY="359.0" text="Time: To" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Button layoutX="516.0" layoutY="472.0" mnemonicParsing="false" onAction="#clearFields" prefHeight="32.0" prefWidth="73.0" text="Clear" />
+            <Button layoutX="300.0" layoutY="690.0" mnemonicParsing="false" onAction="#ViewRooms" prefHeight="36.0" prefWidth="244.0" text="Show available rooms" />
+            <TextArea fx:id="show" layoutX="64.0" layoutY="186.0" prefHeight="286.0" prefWidth="256.0" />
+            <TextArea fx:id="welcome" layoutX="312.0" layoutY="23.0" prefHeight="36.0" prefWidth="340.0">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></TextArea>
+            <Label layoutX="381.0" layoutY="411.0" text="Course" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <TextField fx:id="course" layoutX="572.0" layoutY="418.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

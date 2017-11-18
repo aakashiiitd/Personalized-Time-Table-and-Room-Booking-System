@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane prefHeight="792.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.student.StudentController">
+   <top>
+      <AnchorPane prefHeight="792.0" prefWidth="790.0" style="-fx-background-color: #0276FD;" BorderPane.alignment="CENTER">
+         <children>
+            <Label graphicTextGap="0.0" layoutX="67.0" layoutY="26.0" prefHeight="78.0" prefWidth="235.0" text="Student" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="43.0" />
+               </font>
+            </Label>
+            <TextField fx:id="search" layoutX="67.0" layoutY="130.0" prefHeight="36.0" prefWidth="320.0" />
+            <Button layoutX="123.0" layoutY="181.0" mnemonicParsing="false" onAction="#ShowCourses" prefHeight="36.0" prefWidth="208.0" text="Show Courses" />
+            <TextArea fx:id="show" layoutX="20.0" layoutY="268.0" prefHeight="352.0" prefWidth="347.0" />
+            <Button layoutX="526.0" layoutY="130.0" mnemonicParsing="false" onAction="#viewRequests" prefHeight="36.0" prefWidth="198.0" text="View Requested Rooms" />
+            <Button layoutX="482.0" layoutY="708.0" mnemonicParsing="false" onAction="#ViewRooms" prefHeight="36.0" prefWidth="218.0" text="View Available Rooms" />
+            <Button layoutX="526.0" layoutY="181.0" mnemonicParsing="false" onAction="#goRequest" prefHeight="36.0" prefWidth="197.0" text="Request Room" />
+            <Button layoutX="105.0" layoutY="716.0" mnemonicParsing="false" onAction="#showtimetable" prefHeight="36.0" prefWidth="208.0" text="Show/Edit Timetable" />
+            <Button layoutX="105.0" layoutY="659.0" mnemonicParsing="false" onAction="#goCourses" prefHeight="36.0" prefWidth="208.0" text="Add Course" />
+            <Button layoutX="694.0" layoutY="20.0" mnemonicParsing="false" onAction="#goLogIn" style="-fx-background-radius: 50;" text="Log Out">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="room" layoutX="580.0" layoutY="275.0" prefHeight="34.0" prefWidth="184.0" />
+            <TextField fx:id="day" layoutX="580.0" layoutY="336.0" prefHeight="34.0" prefWidth="184.0" />
+            <TextField fx:id="time_from" layoutX="580.0" layoutY="396.0" prefHeight="34.0" prefWidth="184.0" />
+            <TextField fx:id="time_to" layoutX="580.0" layoutY="459.0" prefHeight="34.0" prefWidth="184.0" />
+            <Label layoutX="387.0" layoutY="277.0" text="Room Number" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="387.0" layoutY="336.0" text="Day" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="387.0" layoutY="398.0" text="Time: From" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="387.0" layoutY="461.0" text="Time: To" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Button layoutX="515.0" layoutY="525.0" mnemonicParsing="false" onAction="#clearFields" prefHeight="35.0" prefWidth="85.0" text="Clear" />
+            <Button layoutX="482.0" layoutY="659.0" mnemonicParsing="false" onAction="#checkAvailability" prefHeight="36.0" prefWidth="218.0" text="View Availability" />
+            <TextArea fx:id="welcome" layoutX="342.0" layoutY="17.0" prefHeight="38.0" prefWidth="347.0">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></TextArea>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
